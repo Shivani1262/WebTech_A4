@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="WeatherStyle.css">
+	<title>Weather App</title>
+</head>
+<body>
+	<div class="mdiv">
+		<div class="weather_app">
+			<h2 align="center">WEATHER FORECAST</h2>
+			<div class="ip" autocomplete="off">
+				<input type="text" id="userText">
+				<button onclick="getWeatherData()">
+					<img src="https://www.freepnglogos.com/uploads/search-png/search-file-ios-svg-wikimedia-commons-18.png" height="30px" width="30px"></button>
+			</div>
+			<div class="info" align="center">
+				<img src="https://cdn2.iconfinder.com/data/icons/weather-flat-14/64/weather02-512.png" alt="weather" class="weather_img">
+				<h1 id="temp">27°C</h1>
+				<h2 id="temp">PUNE</h2>
+			</div>
+			<div class="info2">
+				<div class="humidity">
+					<img src="https://cdn4.vectorstock.com/i/1000x1000/39/23/humidity-icon-in-transparent-style-climate-vector-25503923.jpg" alt="humidity" class="humi">
+					<h3>HUMIDITY</h3>
+					<h4 id="humidity_info">50%</h4>
+				</div>
+				<div class="wind">
+					<img src="https://www.clipartmax.com/png/middle/451-4510120_wind-weather-storm-flow-wave-icon-flow-wind-symbol.png" alt="humidity" class="humi">
+					<h3>WIND</h3>
+					<h4 id="wind_info">4 km/hr </h4>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="weatherScript.js"></script>
+</body>
+</html>
